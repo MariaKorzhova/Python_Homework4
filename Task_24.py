@@ -19,6 +19,9 @@ for i in range(N):
 max = lst[-1]+lst[0]+lst[1]
 for j in range(len(lst)-1):
     sum = lst[j-1]+lst[j]+lst[j+1]
+    sum1 = lst[-2]+lst[-1]+lst[0]
     if sum > max:
         max = sum
+    elif sum1 > max:
+        max = sum1
 print(max)
